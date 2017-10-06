@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Роддом</title>
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <style>
+    	.main {
+    	  background: #ffffff url(../img/main-bg.jpg) center no-repeat;
+    	  background-size: cover;
+    	  padding-top: 3rem;
+    	  position: relative;
+    	  z-index: 0;
+    	  padding-bottom: 5rem;
+    	  color: #ffffff;
+    	}
+    	.main::before {
+    	  content: '';
+    	  width: 100%;
+    	  height: 100%;
+    	  left: 0;
+    	  top: 0;
+    	  position: absolute;
+    	  z-index: -1;
+    	  background-color: rgba(0, 0, 0, 0.8);
+    	}
+    	.main h1 {
+    	  margin-top: 10rem;
+    	  text-align: center;
+    	  font-size: 5rem;
+    	}
+    	.main h1 span {
+    	  font-size: 3rem;
+    	}
+    	.main .phone-block {
+    	  text-align: right;
+    	}
+    	.main .phone-block p {
+    	  font-size: 2.4rem;
+    	  margin: 0;
+    	  font-family: 'Museo Sans Cyrl 700';
+    	}
+    	.main .phone-block a {
+    	  display: inline-block;
+    	  border-bottom: 1px solid #ffffff;
+    	  color: #ffffff;
+    	  font-size: 1.8rem;
+    	}
+    	.main-btn {
+    	  margin-top: 7rem;
+    	  width: 33rem;
+    	}
+    	.main .logo {
+    	  margin-left: 8rem;
+    	}
+    	.main .info-slider {
+    	  margin-top: 10rem;
+    	}
+    	.main .info-slider-block {
+    	  text-align: center;
+    	}
+    	.main .info-slider-block img {
+    	  display: block;
+    	  margin: 0 auto;
+    	}
+    	.main .info-slider-block p {
+    	  margin-top: 2rem;
+    	}
+    	.slick-active {
+    	  outline: none;
+    	}
+    	.arrow {
+    	  top: 50%;
+    	  -webkit-transform: translateY(-50%);
+    	          transform: translateY(-50%);
+    	  position: absolute;
+    	  z-index: 9999;
+    	  width: 2rem;
+    	  height: 2rem;
+    	  border: none;
+    	}
+    	.prev {
+    	  left: 0;
+    	  background: url(../img/left-arrow.svg) center no-repeat;
+    	  background-size: 70%;
+    	}
+    	.next {
+    	  right: 0;
+    	  background: url(../img/right-arrow.svg) center no-repeat;
+    	  background-size: 70%;
+    	}
+    </style>
+  </head>
+
+  <body style='overflow-x:hidden;'>
+
+    <main class="main">
+    	<div class="container">
+    		<div class="row">    		
+    			<div class="col-md-4">
+    				<a href="index.html"><img class="logo" src="img/logo.png" alt="Логотип"></a>
+    			</div>
+    			<div class="col-md-4 col-md-offset-4">
+    				<div class="phone-block">
+    					<p><strong>8 800 000 0000</strong></p>
+    					<a class="popup-link" href="#">Заказать звонок</a>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="col-md-10 col-md-offset-1">
+    				<h1><strong>Вы будете лучшим папой,</strong><br> <span>что забрал любимую жену и ребеночка с роддома</span></h1>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4 col-md-offset-4">
+    				<button class="button main-btn popup-btn">заказать услуги</button>
+    			</div>
+    		</div>
+    			<div class="row">
+    				<div class="info-slider">
+    					<div class="info-slider-block">
+    						<img src="img/1.png" alt="Оформление квартиры шариками">
+    						<p>Оформление<br> квартиры шариками</p>
+    					</div>
+    					<div class="info-slider-block">
+    						<img src="img/2.png" alt="Оформление машины">
+    						<p>Оформление<br> машины</p>
+    					</div>
+    					<div class="info-slider-block">
+    						<img src="img/3.png" alt="Фотосъемка">
+    						<p>Фотосъемка<br> "от А до Я"</p>
+    					</div>
+    					<div class="info-slider-block">
+    						<img src="img/4.png" alt="Нам доверились более 3000 мужчин">
+    						<p>Нам доверились<br> более 3000 мужчин</p>
+    					</div>
+    					<div class="info-slider-block">
+    						<img src="img/5.png" alt="Видеосъемка выполнена профессионалами">
+    						<p>Видеосъемка выполнена<br>профессионалами</p>
+    					</div>
+    				</div>
+    			</div>
+    	</div>
+    </main>
+
+		<section class="event">
+			<div class="container">
+				<div class="section-header">
+					<img src="img/heart.png" alt="Сердце">
+					<h2>Это незабываемое событие!</h2>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+						<div class="event-gallery">
+								<div class="event-gallery-block">
+									<a href="img/gallery/gallery-1.jpg">
+										<img src="img/gallery/gallery-1.jpg" alt="">
+									</a>
+								</div>
+								<div class="event-gallery-block">
+									<a href="img/gallery/gallery-2.jpg">
+										<img src="img/gallery/gallery-2.jpg" alt="">
+									</a>
+								</div>
+								<div class="event-gallery-block">
+									<a href="img/gallery/gallery-3.jpg">
+										<img src="img/gallery/gallery-3.jpg" alt="">
+									</a>
+								</div>
+								<div class="event-gallery-block">
+									<a href="img/gallery/gallery-4.jpg">
+										<img src="img/gallery/gallery-4.jpg" alt="">
+									</a>
+								</div>
+								<div class="event-gallery-block">
+									<a href="img/gallery/gallery-5.jpg">
+										<img src="img/gallery/gallery-5.jpg" alt="">
+									</a>
+								</div>
+								<div class="event-gallery-block">
+									<a href="img/gallery/gallery-6.jpg">
+										<img src="img/gallery/gallery-6.jpg" alt="">
+									</a>
+								</div>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="confidence">
+			<div class="container">
+				<div class="event-form-header">
+					<h3>Заказать выписку из роддома</h3>
+					<p>Заполните форму и мы организуем выписку из роддома<br>полностью за Вас!</p>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="event-form" action="#">
+							<input class="form-input name-user" type="text" placeholder="Имя">
+							<input class="form-input phone-user" type="text" placeholder="Телефон">
+							<button class="form-button">отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="container">
+				<div class="section-header">
+					<img src="img/star.png" alt="Звезда">
+					<h2>Почему вы закажете именно у нас</h2>
+				</div>
+				<div class="row">
+					<div class="features-block col-md-3 col-md-offset-1 col-xs-6">
+						<img src="img/features/1.png" alt="">
+						<p>Срок организации -<br>1 день</p>
+					</div>
+					<div class="features-block col-md-3 col-xs-6">
+						<img src="img/features/2.png" alt="">
+						<p>Незабываемые<br>эмоции</p>
+					</div>
+					<div class="features-block col-md-3 col-xs-6">
+						<img src="img/features/3.png" alt="">
+						<p>Вы экономите<br>своё время</p>
+					</div>
+					<div class="features-block col-md-3 col-md-offset-1 col-xs-6">
+						<img src="img/features/4.png" alt="">
+						<p>Видео и фотосъемка<br>высокого качества</p>
+					</div>
+					<div class="features-block col-md-3 col-xs-6">
+						<img src="img/features/5.png" alt="">
+						<p>Наличный и безналичный<br>расчет</p>
+					</div>
+					<div class="features-block col-md-3 col-xs-6">
+						<img src="img/features/6.png" alt="">
+						<p>Индивидуальный подход<br>к каждому празднику</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="price">
+			<div class="container">
+				<div class="section-header">
+					<img src="img/price.png" alt="Цена">
+					<h2>Стоимость наших услуг</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="price-blocks price-blocks-1">
+							<h3>Название</h3>
+							<p>9 000 <small>руб</small></p>
+							<ul>
+								<li>Шары 30 шт разноцветные</li>
+								<li>Наклейка на машину</li>
+								<li>Фотосъемка<br>(15 обработанных фотографий<br>оформленных в фотокнигу)</li>
+							</ul>
+							<button class="form-button price-btn">заказать услугу</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="price-blocks">
+							<h3>Название</h3>
+							<p>15 000 <small>руб</small></p>
+							<ul>
+								<li>Шары 30 шт разноцветные</li>
+								<li>Наклейка на машину</li>
+								<li>Фотосъемка</li>
+								<li>Живая музыка (скрипка)</li>
+								<li>Красивый букет цветов для мамы</li>
+							</ul>
+							<button class="form-button price-btn">заказать услугу</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="price-blocks">
+							<h3>Название</h3>
+							<p>30 000 <small>руб</small></p>
+							<ul>
+								<li>Шары 30 шт разноцветные</li>
+								<li>Наклейка на машину</li>
+								<li>Фотосъемка</li>
+								<li>Диск с записанным стихом,<br>посвященный конкретно вашей<br>супруге, прочитанный под "вашу"<br>песню, который вы включите в машине</li>
+								<li>Красивый букет цветов для мамы</li>
+								<li>Украшение квартиры</li>
+							</ul>
+							<button class="form-button price-btn">заказать услугу</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantage">
+			<div class="container">
+				<div class="section-header">
+					<img src="img/advantage.png" alt="Преимущества">
+					<h2>Наши преимущества</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1 col-sm-6">
+						<div class="advantage-block">
+							<img src="img/advantage/1.png" alt="">
+							<p>Мы занимаемся<br>организацией праздников<br>с 2008 года</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="advantage-block">
+							<img src="img/advantage/2.png" alt="">
+							<p>Нас рекомендуют<br>более 500<br>счастливых мужей</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="advantage-block">
+							<img src="img/advantage/3.png" alt="">
+							<p>Небольшие цены<br>за высокое качество<br>обслуживания</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-1 col-sm-6">
+						<div class="advantage-block">
+							<img src="img/advantage/4.png" alt="">
+							<p>Более 1000<br>проведенных<br>выписок</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="advantage-block">
+							<img src="img/advantage/5.png" alt="">
+							<p>Организация<br>праздника<br>в день обращения</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="advantage-block">
+							<img src="img/advantage/6.png" alt="">
+							<p>Есть решения<br>задач<br>любой сложности</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="confidence">
+			<div class="container">
+				<div class="event-form-header">
+					<h3>Вы запомните этот день на всю жизнь! Доверьтесь нам!</h3>
+					<p>Заполни заявку и мы расскажем, как сделать встречу любимой жены<br>и ребенка незабываемой!</p>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="event-form" action="#">
+							<input class="form-input name-user" type="text" placeholder="Имя">
+							<input class="form-input phone-user" type="text" placeholder="Телефон">
+							<button class="form-button">заказать звонок</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="feedback">
+			<div class="container">
+				<div class="section-header">
+					<img src="img/feedback.png" alt="Отзывы">
+					<h2>Отзывы о нас</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="feedback-slider">
+							<div class="feedback-block">
+								<img src="img/man.jpg" alt="Заказчик">
+								<div class="feedback-block-info">
+									<h3>Игорь Иванов</h3>
+									<p>Первый раз обратился в данную службу два года назад, потому что со вкусом у меня не очень, а жену хотел порадовать. И действительно, моя любимая была самой счастливой. А когда Света, родила мне второго малыша, я уже знал куда обращаться, при выписке из роддома.</p>
+								</div>
+							</div>
+							<div class="feedback-block">
+								<img src="img/man.jpg" alt="Заказчик">
+								<div class="feedback-block-info">
+									<h3>Иван Игорев</h3>
+									<p>Первый раз обратился в данную службу два года назад, потому что со вкусом у меня не очень, а жену хотел порадовать. И действительно, моя любимая была самой счастливой. А когда Света, родила мне второго малыша, я уже знал куда обращаться, при выписке из роддома.</p>
+								</div>
+							</div>
+							<div class="feedback-block">
+								<img src="img/man.jpg" alt="Заказчик">
+								<div class="feedback-block-info">
+									<h3>Игорь Игорев</h3>
+									<p>Первый раз обратился в данную службу два года назад, потому что со вкусом у меня не очень, а жену хотел порадовать. И действительно, моя любимая была самой счастливой. А когда Света, родила мне второго малыша, я уже знал куда обращаться, при выписке из роддома.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="confidence">
+			<div class="container">
+				<div class="event-form-header">
+					<h3>Вам не нужно договариваться за оператора, фотографа, кондитера -<br>Мы сделаем это за Вас!</h3>
+					<p>Заполни заявку и мы расскажем, как сделать встречу любимой жены<br>и ребенка незабываемой!</p>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="event-form" action="#">
+							<input class="form-input name-user" type="text" placeholder="Имя">
+							<input class="form-input phone-user" type="text" placeholder="Телефон">
+							<button class="form-button">заказать звонок</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="happy">
+			<div class="container">
+				<div class="section-header">
+					<img src="img/happy.png" alt="Счастье">
+					<h2>Эти мужчины уже осчастливили своих жен!</h2>
+				</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 happy-image">
+									<a href="img/happy/1.jpg">
+										<img src="img/happy/1.jpg" alt="Иван">
+										<div class="text text-1">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-12 col-sm-12 happy-image">
+									<a href="img/happy/1.jpg">
+										<img src="img/happy/5.jpg" alt="Иван">
+										<div class="text">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 happy-image">
+									<a href="img/happy/2.jpg">
+										<img src="img/happy/2.jpg" alt="Иван">
+										<div class="text">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 happy-image">
+									<a href="img/happy/3.jpg">
+										<img src="img/happy/3.jpg" alt="Иван">
+										<div class="text">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-6 col-sm-6 happy-image">
+									<a href="img/happy/4.jpg">
+										<img src="img/happy/4.jpg" alt="Иван">
+										<div class="text">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 happy-image">
+									<a href="img/happy/6.jpg">
+										<img src="img/happy/6.jpg" alt="Иван">
+										<div class="text">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+								<div class="col-md-6 col-sm-6 happy-image">
+									<a href="img/happy/7.jpg">
+										<img src="img/happy/7.jpg" alt="Иван">
+										<div class="text">
+											<img src="img/happy/heart.png" alt="">
+											<p>Иван и Наталья<br>24/05/2015</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+
+		<section class="confidence">
+			<div class="container">
+				<div class="event-form-header">
+					<h3>У вас остались вопросы?</h3>
+					<p>Заполни заявку и мы расскажем, как сделать встречу любимой жены<br>и ребенка незабываемой!</p>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<form class="event-form" action="#">
+							<input class="form-input name-user" type="text" placeholder="Имя">
+							<input class="form-input phone-user" type="text" placeholder="Телефон">
+							<button class="form-button">заказать звонок</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">    		
+					<div class="col-md-4">
+						<a href="index.html"><img class="logo" src="img/logo.png" alt="Логотип"></a>
+					</div>
+					<div class="col-md-4 col-md-offset-4">
+						<div class="phone-block">
+							<p><strong>8 800 000 0000</strong></p>
+							<a href="#">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Модальное окно для ссылки -->
+		<div class="popup">
+			<div class="popup-dialog">
+				<div class="popup-content">
+					<button class="popup-close">&times;</button>
+					<p>Оставьте заявку и мы свяжемся с Вами!</p>
+					<div class="popup-form">
+						<form action="#">
+							<input class="form-input" type="text" placeholder="Введите Ваше имя...">
+							<input class="form-input" type="text" placeholder="Введите Ваш телефон...">
+							<button class="form-button" type="submit">отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно для кнопки -->
+		<div class="popup2">
+			<div class="popup2-dialog">
+				<div class="popup2-content">
+					<button class="popup2-close">&times;</button>
+					<h4>Решили заказать услугу?</h4>
+					<p>Заполните простую форму и мы все организуем!</p>
+					<div class="popup2-form">
+						<form action="#">
+							<input class="form-input" type="text" placeholder="Введите Ваше имя...">
+							<input class="form-input" type="text" placeholder="Введите Вашу фамилию...">
+							<input class="form-input" type="text" placeholder="Введите Ваш телефон...">
+							<button class="form-button" type="submit">заказать</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="slick/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('.popup-link').on('click', function(event){
+    			event.preventDefault();
+    			$('.popup').fadeIn();
+    		});
+    		$('.popup-close').on('click', function(event) {
+    			event.preventDefault();
+    			$('.popup').fadeOut();
+    		});
+    		$('.popup-btn').on('click', function(event){
+    			event.preventDefault();
+    			$('.popup2').fadeIn();
+    		});
+    		$('.popup2-close').on('click', function(event) {
+    			event.preventDefault();
+    			$('.popup2').fadeOut();
+    		});
+    		$('.feedback-slider').slick({
+    			dots: true
+    		});
+    		$('.info-slider').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+            		{
+            		  breakpoint: 1190,
+            		  settings: {
+            		    slidesToShow: 4,
+            		    slidesToScroll: 1,
+            		    prevArrow: '<button class="arrow prev"></button>',
+            		    nextArrow: '<button class="arrow next"></button>'
+            		  }
+            		},
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 3,
+                    prevArrow: '<button class="arrow prev"></button>',
+                    nextArrow: '<button class="arrow next"></button>',
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 737,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    prevArrow: '<button class="arrow prev"></button>',
+                    nextArrow: '<button class="arrow next"></button>'
+                  }
+                },
+                {
+                  breakpoint: 444,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: '<button class="arrow prev"></button>',
+                    nextArrow: '<button class="arrow next"></button>'
+                  }
+                }
+              ]
+        });
+        $('.event-gallery').slick({
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+            		{
+            		  breakpoint: 1190,
+            		  settings: {
+            		    slidesToShow: 4,
+            		    slidesToScroll: 1,
+            		    prevArrow: '<button class="arrow prev"></button>',
+            		    nextArrow: '<button class="arrow next"></button>'
+            		  }
+            		},
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 3,
+                    prevArrow: '<button class="arrow prev"></button>',
+                    nextArrow: '<button class="arrow next"></button>',
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 737,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    prevArrow: '<button class="arrow prev"></button>',
+                    nextArrow: '<button class="arrow next"></button>'
+                  }
+                },
+                {
+                  breakpoint: 444,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: '<button class="arrow prev"></button>',
+                    nextArrow: '<button class="arrow next"></button>'
+                  }
+                }
+              ]
+        });
+        
+    	});
+    </script>
+    <script>
+    	$(document).ready(function() {
+    		$('.happy-image').magnificPopup({
+    			delegate: 'a',
+    			type: 'image',
+    			gallery: {
+    				enabled: true,
+    				navigateByImgClick: true,
+    				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    			}
+    		});
+    		$('.event-gallery-block').magnificPopup({
+    			delegate: 'a',
+    			type: 'image',
+    			gallery: {
+    				enabled: true,
+    				navigateByImgClick: true,
+    				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    			}
+    		});
+    	});
+    </script>
+  </body>
+</html>
+	
